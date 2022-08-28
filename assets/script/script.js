@@ -38,12 +38,12 @@ for (var i = 0; i <= 8; i++) {
         hourColor = "future";
     }
 
-    $('.container').append(`<div class="row" id= "${i}"> 
-                                <div class="hour d-flex justify-content-center align-items-center col-md-1">
+    $('.container').append(`<div class="row flex-nowrap" id= "${i}"> 
+                                <div class="hour d-flex justify-content-center align-items-center col-md-1 col-sm-1 col-xs-1">
                                     ${hourOfDay}
                                 </div>
-                                <textarea class="col-md-10 ${hourColor}">${tasks[i]}</textarea>
-                                <div class="saveBtn col-md-1 align-middle d-flex justify-content-center align-items-center">
+                                <textarea class="col-md-10 ${hourColor} col-sm-10 col-xs-10">${tasks[i]}</textarea>
+                                <div class="saveBtn col-md-1 col-sm-1 col-xs-1 align-middle d-flex justify-content-center align-items-center">
                                     <i class="fa-solid fa-floppy-disk"></i>
                                 </div>
                             </div>`);
